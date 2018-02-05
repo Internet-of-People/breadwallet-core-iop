@@ -123,7 +123,7 @@ BRMasterPubKey BRBIP32MasterPubKey(const void *seed, size_t seedLen)
         BRKeySetSecret(&key, &secret, 1);
         mpk.fingerPrint = BRKeyHash160(&key).u32[0];
         
-        _CKDpriv(&secret, &chain, 0 | BIP32_HARD); // path m/0H
+        _CKDpriv(&secret, &chain, 0 | BIP32_HARD); // path m/0H  // TODO: change this to follow BIP44: use m/44H/66H/0H instead 
     
         mpk.chainCode = chain;
         BRKeySetSecret(&key, &secret, 1);
