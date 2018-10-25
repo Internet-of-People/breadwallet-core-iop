@@ -1,4 +1,2 @@
 # breadwallet-core
-SPV bitcoin C library
-
-[getting started](https://github.com/breadwallet/breadwallet-core/wiki)
+Forked from the popular SPV bitcoin C library and adapted to the IOP coin
