@@ -358,6 +358,9 @@ int BRMerkleBlockVerifyDifficulty(const BRMerkleBlock *block, const BRMerkleBloc
     
         if (block->target != ((uint32_t)target | size << 24)) r = 0;
     }
+    else if (r && block->height == 150000) {
+        if (block->target != MAX_PROOF_OF_WORK) r = 0;
+    }
     else if (r && block->target != previous->target) r = 0;
     
     return r;
