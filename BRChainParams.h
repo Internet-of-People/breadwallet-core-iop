@@ -47,11 +47,11 @@ typedef struct {
 
 static const char *BRMainNetDNSSeeds[] = {
     "explorer.iop.cash.", "mainnet.iop.cash.", "main1.iop.cash.", "main2.iop.cash.", "main3.iop.cash.", 
-    "main4.iop.cash.", "main5.iop.cash.", NULL
+    "main4.iop.cash.", "main5.iop.cash.", "mainnet.iop.global.",NULL
 };
 
 static const char *BRTestNetDNSSeeds[] = {
-    "testnet.iop.cash.", "test1.iop.cash.", "test2.iop.cash.", NULL
+    "testnet.iop.cash.", "test1.iop.cash.", "test2.iop.cash.", "testnet.iop.global.",NULL
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
